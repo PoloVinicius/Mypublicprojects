@@ -3,12 +3,10 @@ svg{
     width: 600px;
     height:600px;
 }
-div #title {
+#title {
     background-color:purple;
-    color:white;
-    position: relative;
-    padding: 25px 0 25px 0px;
-    text-align:center;
+    width: 1204px;
+    height:150px;
 }
 #man{
     background-color: blue;
