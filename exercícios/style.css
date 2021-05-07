@@ -1,0 +1,19 @@
+svg{
+    background-color:#074c61;
+    width: 600px;
+    height:600px;
+}
+div #title {
+    background-color:purple;
+    color:white;
+    position: relative;
+    padding: 25px 0 25px 0px;
+    text-align:center;
+}
+#man{
+    background-color: blue;
+}
+text{
+    font-size: 50px;
+    color: white;
+}

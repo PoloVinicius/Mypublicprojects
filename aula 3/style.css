@@ -1,0 +1,6 @@
+svg{
+    border: 2px dotted hsl(0, 33%, 98%);
+    background-color: rgba(100, 151, 100, 0.5);
+    width: 700px;
+    height: 600px;
+}

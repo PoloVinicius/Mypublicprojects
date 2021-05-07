@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Vertical Horizontal</h1>
+        <svg>
+            <path d="M10 10 H 90 V 90 H 10 V Z"/>
+        </svg>
+    </div>
+    <div>
+        <h1>Linhas</h1>
+        <svg>
+            <path d="M10 10H 300V 300H 10 Z"/>
+                <path d="m10 10h 290v 290h " fill="blue"/>
+                <path d="m10 10h 290v 290h 10z" fill="red"/>
+        </svg>
+    </div>
+    <div>
+        <h1>Bezier Curva Q</h1>
+        <p>A curva Q é utilizada quando a curva tem apenas um ponto carteziano (x,y) de referência.</p>
+        <svg>
+            <!--Mx1,y1 qx,qy x2,y2-->
+            <path d="M10,300 Q250,100 500,300" stroke="blue" fill="none" stroke-width="5px"/>
+            <path d="M30,400 Q500,0 600,450" stroke="blue" fill="none" stroke-width="5px"/>
+        </svg>
+    </div>
+    
+<div>
+<h1>Exercicio</h1>
+    <p>A curva C é utilizada quando a curva tem vários pontos cartezianos (x,y) de referência.</p>
+    <svg>
+        <circle cx="250" cy="150" r="100" fill="yellow"/>
+        <polygon points="215,280 245,240 275,280" fill="yellow"/>
+        <line x1="245" y1="280" x2="245" y2="400" stroke="black"/>
+    </svg>
+</div>
+<div>
+
+    <h1>Baloon</h1>
+    <p>Exercício feito pelo professor Léo</p>
+
+    <svg>
+
+        <ellipse cx="100" cy="100" rx="70" ry="80"
+
+            fill="chartreuse"/>
+
+        <polygon points="90,190 100,175 110,190"
+
+            fill="chartreuse" />
+
+        <path d="M100 190 Q110 250 100,400"
+
+            stroke="black"
+
+            stroke-opacity=".5"
+
+            fill="none"/>
+
+    </svg>
+
+</div>
+    
+</body>
+</html>
