@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+    <title>Aula 5 Texto</title>
+</head>
+<body>
+    <div>
+        <h1>Texto</h1>
+        <svg width="850px" height="200" viewbox="0 0 850 200">
+            <text x="0" y="100" fill="blue" font-size="50" font-family="ewert">Gentileza gera Gentileza!</text>
+            <line x1="0" y1="110" x2="850" y2="110" stroke="blue"></line>
+        </svg>
+        <h1>Texto Centralizado</h1>
+        <!--Texto ancorado, pivot centralizado-->
+        <svg width="850px" height="200" viewbox="0 0 850 200">
+            <text x="50%" y="50%" fill="blue" font-size="25" font-family="ewert" text-anchor="middle">Tudo o que você pensar vai voltar para você</text>
+            <line x1="0" y1="110" x2="850" y2="110" stroke="blue"></line>
+        </svg>
+        <h1>Texto Relativo</h1>
+        <p>Posicionamento vertical alterado usando o dy relativo ao tamanho da fonte</p>
+        <!--dy ou dx altera a posição em y ou x relativo a fonte-->
+        <svg width="850px" height="200" viewbox="0 0 850 200">
+            <text x="50%" y="50%" dy=".5em" fill="blue" font-size="25" font-family="ewert" text-anchor="middle">Hoponopono</text>
+            <line x1="0" y1="110" x2="850" y2="110" stroke="blue"></line>
+        </svg>
+    </div>
+    <div>
+        <h1>Texto com Path</h1>
+        <p>Usando a Bezier em textos</p>
+        <svg width="850px" height="200" viewbox="0 0 850 200">
+            <defs>
+                <path id="textpath" d="m50,190 q500,-380 750,190"/>
+            </defs>
+            <text fill="red" font-size="50" font-family="ewert">
+                <textpath xlink:href="#textpath">Recebo agora $10000,00</textpath>
+            </text>
+        </svg>
+    </div>
+</body>
+</html>
